@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EFTLibrary</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= link_to "Books", root_path %> | <%= link_to "Categories", categories_path %>
+
+
+<%= yield %>
+
+</body>
+</html>
